@@ -1,5 +1,179 @@
-<script src="./js/jquery.min.js"></script>
-<script src="./js/jquery.fancybox.min.js"></script>
-<script src="./js/slick.min.js"></script>
-<script src="./js/jquery.maskedinput.min.js"></script>
-<script src="./js/scripts.js"></script>
+
+
+<!-- jQuery UI 1.11.4 -->
+<script src="./index_files/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+	$.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="./index_files/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="./index_files/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="./index_files/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="./index_files/jquery.vmap.min.js"></script>
+<script src="./index_files/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="./index_files/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="./index_files/moment.min.js"></script>
+<script src="./index_files/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="./index_files/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="./index_files/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="./index_files/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./index_files/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./index_files/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
+<!-- Select2 -->
+<script src="./index_files/select2.full.min.js"></script>
+
+<!-- DataTables  & Plugins -->
+<script src="./index_files/jquery.dataTables.js"></script>
+<script src="./index_files/fixedHeader.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="./index_files/fixedHeader.bootstrap4.min.css">
+<script src="./index_files/fixedColumns.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="./index_files/fixedColumns.bootstrap4.min.css">
+<script src="./index_files/dataTables.bootstrap4.min.js"></script>
+<script src="./index_files/dataTables.responsive.min.js"></script>
+<script src="./index_files/responsive.bootstrap4.min.js"></script>
+<script src="./index_files/dataTables.buttons.min.js"></script>
+<script src="./index_files/buttons.bootstrap4.min.js"></script>
+<script src="./index_files/jszip.min.js"></script>
+<script src="./index_files/pdfmake.min.js"></script>
+<script src="./index_files/vfs_fonts.js"></script>
+<script src="./index_files/buttons.html5.min.js"></script>
+<script src="./index_files/buttons.print.min.js"></script>
+<script src="./index_files/buttons.colVis.min.js"></script>
+<script src="./index_files/jquery.jeditable.js"></script>
+
+<script>
+	$(function () {
+		$("#data_table").DataTable({
+			"responsive": true,
+			"lengthChange": true,
+			"autoWidth": false,
+			"order": [[ 0, "desc" ]],
+			"lengthMenu": [[25, 50, 100], [25, 50, 100]],
+			"pageLength" : 100,
+			"language": {
+				"url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Russian.json"
+			}
+		}).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
+
+
+		$("#data_table_invoice").DataTable({
+			"responsive": false,
+			"lengthChange": false,
+			"autoWidth": false,
+			fixedHeader: true,
+			scrollX:        true,
+			scrollCollapse: true,
+			scrollY:        500,
+			"ordering": false,
+			paging: false,
+			"info": false,
+			"searching": false,
+			"language": {
+				"url": "https://cdn.datatables.net/plug-ins/1.10.21/i18n/Russian.json"
+			}
+		}).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+	});
+</script>
+
+<script>
+	$(function () {
+		$('.select2').select2();
+
+		//Date range picker
+		$('#reservationdate').datetimepicker({
+			format: 'YYYY-MM-DD'
+		});
+
+		$('.date-input').daterangepicker({
+			showDropdowns: true,
+			singleDatePicker: true,
+			autoApply: true,
+			locale: {
+				"format": "YYYY-MM-DD",
+				"separator": " - ",
+				"customRangeLabel": "Custom",
+				"weekLabel": "Н",
+				"daysOfWeek": [
+					"Вс",
+					"Пн",
+					"Вт",
+					"Ср",
+					"Чт",
+					"Пт",
+					"Сб"
+				],
+				"monthNames": [
+					"Январь",
+					"Февраль",
+					"Март",
+					"Апрель",
+					"Май",
+					"Июнь",
+					"Июль",
+					"Август",
+					"Сентябрь",
+					"Октябрь",
+					"Ноябрь",
+					"Декабрь"
+				],
+				"firstDay": 1
+			},
+		});
+
+		$('.date-input-payment').daterangepicker({
+			showDropdowns: true,
+			singleDatePicker: true,
+			autoApply: true,
+			autoUpdateInput: false,
+			locale: {
+				"format": "YYYY-MM-DD",
+				"separator": " - ",
+				"customRangeLabel": "Custom",
+				"weekLabel": "Н",
+				"daysOfWeek": [
+					"Вс",
+					"Пн",
+					"Вт",
+					"Ср",
+					"Чт",
+					"Пт",
+					"Сб"
+				],
+				"monthNames": [
+					"Январь",
+					"Февраль",
+					"Март",
+					"Апрель",
+					"Май",
+					"Июнь",
+					"Июль",
+					"Август",
+					"Сентябрь",
+					"Октябрь",
+					"Ноябрь",
+					"Декабрь"
+				],
+				"firstDay": 1
+			},
+		}).on("apply.daterangepicker", function (e, picker) {
+			picker.element.val(picker.startDate.format(picker.locale.format));
+		});
+	})
+</script>
+
+
+

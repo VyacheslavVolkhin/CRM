@@ -1,41 +1,28 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
-}
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
-}
 .frm-row,
-.frm-field,
 .frm-row-submit {
     display: flex;
     flex-wrap: wrap;
 	position: relative;
-	line-height: 1;
+    margin: 0 -5px;
+}
+.frm-field {
+    flex-shrink: 0;
+    display: block;
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.field-half {
+    width: 50%;
 }
 .frm-select {
 	position: relative;
 	display: block;
 	overflow: hidden;
-    line-height: 1;
 	input {
 		display: block;
 		position: absolute;

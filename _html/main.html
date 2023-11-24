@@ -1,28 +1,678 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <!-- build:section head -->
-    <!-- /build -->
-    <body>
-        <!-- wrap -->
-        <div class="wrap">
-            
-            <!-- build:section header -->
-            <!-- /build -->
-
-            <!-- page -->
-            <div class="page">
-                2222
-            </div>
-            <!-- /page -->
-            
-            <!-- build:section footer -->
-            <!-- /build -->
-            
-        </div>
-        <!-- /wrap -->
-
-        <!-- build:section scripts -->
-        <!-- /build -->
-    
-    </body>
+<!DOCTYPE html><!-- saved from url=(0032)https://nika.webuspex38.ru/admin -->
+<html lang="en">
+	<!-- build:section head -->
+	<!-- /build -->
+	
+	
+	<body class="hold-transition sidebar-collapse layout-fixed">
+		<div class="wrapper">
+			
+			<!-- build:section header -->
+			<!-- /build -->
+			
+			<!-- build:section side -->
+			<!-- /build -->
+			
+			<div class="content-wrapper">
+				
+				<section class="content">
+					
+					<!--main-grid-box-->
+					<div class="main-grid-box">
+						
+						<!--grid-item-->
+						<div class="grid-item buttons-panel-box">
+							<div class="cnt-box">
+								<div class="frm-row">
+									<div class="frm-field field-primary">
+										<button class="btn btn-primary button-main">
+											<span class="button-ico">
+												<img src="./img/icons/filter01.svg" alt="">
+											</span>
+											<span class="button-title">Создать счет</span>
+										</button>
+									</div>
+									<div class="frm-field field-warning">
+										<button class="btn btn-warning button-main">
+											<span class="button-ico">
+												<img src="./img/icons/filter02.svg" alt="">
+											</span>
+											<span class="button-title">Создать заявку</span>
+										</button>
+									</div>
+									<div class="frm-field field-info">
+										<button class="btn btn-info button-main">
+											<span class="button-ico">
+												<img src="./img/icons/filter03.svg" alt="">
+											</span>
+											<span class="button-title">Добавить пользователя</span>
+										</button>
+									</div>
+									<div class="frm-field field-default">
+										<button class="btn btn-default btn-underline button-main">
+											<span class="button-ico">
+												<img src="./img/icons/filter04.svg" alt="">
+											</span>
+											<span class="button-title">Перейти в выгрузку файлов</span>
+										</button>
+									</div>
+									<div class="frm-field field-search">
+										<div class="input-group input-search-main">
+											<input type="search" class="form-control form-main" placeholder="Найти по названию, зоне, сложности и т.п. ">
+											<div class="input-group-append">
+												<button type="submit" class="btn btn-default button-main">
+													<span class="button-ico">
+														<img src="./img/icons/search.svg" alt="">
+													</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/grid-item-->
+						
+						<!--grid-item-->
+						<div class="grid-item map-panel-box">
+							<div class="cnt-box">
+								<div class="cnt-title-wrap">
+									<div class="cnt-title">Карта заявок</div>
+								</div>
+								<!--filter-panel-box-->
+								<div class="filter-panel-box js-popup-wrap">
+									<div class="filter-action-wrap cnt-title-wrap js-btn-popup-toggle">
+										<div class="btn-action-icon">
+											<span class="button-ico">
+												<img src="./img/icons/filter.svg" alt="">
+											</span>
+											<span class="button-title">Отфильтровать заявки</span>
+										</div>
+									</div>
+									<div class="filter-content-wrap js-popup-block">
+										<div class="filter-content-title">
+											<div class="btn-action-icon">
+												<span class="button-ico">
+													<img src="./img/icons/filter.svg" alt="">
+												</span>
+												<span class="button-title">Отфильтровать заявки</span>
+											</div>
+										</div>
+										<div class="filter-content-form">
+											<div class="frm-row">
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Тип заявки</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Сложность заявки</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Категория заявки</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Куратор зоны</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Зоны</option>
+													</select>
+												</div>
+												<div class="frm-field field-half">
+													<select class="custom-select form-small">
+														<option>Трекеры</option>
+													</select>
+												</div>
+												<div class="frm-field field-half">
+													<select class="custom-select form-small">
+														<option>Тип</option>
+													</select>
+												</div>
+												<div class="frm-field field-half">
+													<div class="input-group date" id="date-start" data-target-input="nearest">
+														<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-start" placeholder="Дата с">
+														<div class="input-group-append input-small" data-target="#date-start" data-toggle="datetimepicker">
+															<div class="input-group-text">
+																<div class="button-ico">
+																	<img src="./img/icons/calendar.svg" alt="">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="frm-field field-half">
+													<div class="input-group date" id="date-end" data-target-input="nearest">
+														<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-end" placeholder="Дата по">
+														<div class="input-group-append input-small" data-target="#date-end" data-toggle="datetimepicker">
+															<div class="input-group-text">
+																<div class="button-ico">
+																	<img src="./img/icons/calendar.svg" alt="">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Контракты</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Заказчики</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Объекты</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Ст. просрочки</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Автомобиль</option>
+													</select>
+												</div>
+												<div class="frm-field">
+													<select class="custom-select form-small">
+														<option>Механик</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="filter-content-actions">
+											<div class="frm-row">
+												<div class="frm-field field-submit">
+													<button type="submit" class="btn btn-primary button-small">Отфильтровать заявки</button>
+												</div>
+												<div class="frm-field field-reset">
+													<button type="reset" class="btn btn-link btn-underline button-small">Очистить фильтр</button>
+												</div>
+												<div class="frm-field field-close">
+													<button type="button" class="btn btn-link btn-underline button-small js-btn-popup-close">Закрыть</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/filter-panel-box-->
+								<!--items-panel-box-->
+								<div class="items-panel-box">
+									<div class="items-wrap">
+										<div class="item-wrap">
+											<div class="small-box bg-info">
+												<div class="inner">
+													<p>Кол-во объектов</p>
+													<h3>665</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile01.svg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="item-wrap">
+											<div class="small-box bg-success">
+												<div class="inner">
+													<p>Заявок выполнено</p>
+													<h3>140399</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile02.svg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="item-wrap">
+											<div class="small-box bg-primary">
+												<div class="inner">
+													<p>Заявок в работе</p>
+													<h3>6104</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile03.svg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="item-wrap">
+											<div class="small-box bg-danger">
+												<div class="inner">
+													<p>Заявок просрочено</p>
+													<h3>455</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile04.svg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="item-wrap">
+											<div class="small-box bg-warning">
+												<div class="inner">
+													<p>В работе / всего</p>
+													<h3>79/181</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile05.svg" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="item-wrap">
+											<div class="small-box bg-gray-light">
+												<div class="inner">
+													<p>В работе/Просрочено</p>
+													<h3>6104/2074</h3>
+												</div>
+												<div class="icon">
+													<img src="./img/icons/tile06.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/items-panel-box-->
+								<!--map-panel-box-->
+								<div class="map-panel-box">
+									<div class="map-inner-wrap">
+										<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+									</div>
+									<div class="map-legends-wrap">
+										<div class="legend-title">Значки на &nbsp;карте:</div>
+										<div class="legend-items">
+											<div class="elm-legend">
+												<span class="bg-primary legend-color"></span>
+												Новый объект
+											</div>
+											<div class="elm-legend">
+												<span class="bg-success legend-color"></span>
+												В работе
+											</div>
+											<div class="elm-legend">
+												<span class="bg-warning legend-color"></span>
+												Время на исходе
+											</div>
+											<div class="elm-legend">
+												<span class="bg-danger legend-color"></span>
+												Просрочено
+											</div>
+											<div class="elm-legend">
+												<span class="bg-purple elm-ico">
+													<img src="./img/icons/car.svg" alt="">
+												</span>
+												Автомобиль
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/map-panel-box-->
+							</div>
+						</div>
+						<!--/grid-item-->
+						
+						<!--grid-item-->
+						<div class="grid-item tiles-panel-box">
+							<div class="items-wrap">
+								<!--item wrap-->
+								<div class="item-wrap">
+									<div class="item-tile-card cnt-box">
+										<div class="tile-title-wrap">
+											<div class="tile-ico">
+												<img src="./img/icons/title01.svg" alt="">
+											</div>
+											<div class="tile-title">Заявки взятые в работу сегодня <span class="text-danger">(3)</span></div>
+										</div>
+										<div class="tile-content-wrap">
+											<table class="table table-striped tbl-adaptive">
+												<tbody>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b> от&nbsp;12.05.2021</td>
+														<td>Лукойл 03.2024</td>
+														<td>
+															<div class="text-title">Иванов</div>
+															<div class="elm-ico">
+																<img src="./img/icons/inwork.svg" alt="">
+															</div>
+															В&nbsp;работе с&nbsp;12.05.2021
+														</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b> от&nbsp;12.05.2021</td>
+														<td>Лукойл&nbsp;03.2024</td>
+														<td>
+															<div class="text-title">Иванов</div>
+															<div class="elm-ico">
+																<img src="./img/icons/inwork.svg" alt="">
+															</div>
+															В&nbsp;работе с&nbsp;12.05.2021
+														</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b> от&nbsp;12.05.2021</td>
+														<td>Лукойл&nbsp;03.2024</td>
+														<td>
+															<div class="text-title">Иванов</div>
+															<div class="elm-ico">
+																<img src="./img/icons/inwork75.svg" alt="">
+															</div>
+															<span class="text-warning">64 часа до&nbsp;сдачи</span> с&nbsp;12.05.2021
+														</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tile-footer-wrap">
+											<a href="" class="link-main">Все заявки</a>
+										</div>
+									</div>
+								</div>
+								<!--/item wrap-->
+								<!--item wrap-->
+								<div class="item-wrap">
+									<div class="item-tile-card cnt-box">
+										<div class="tile-title-wrap">
+											<div class="tile-ico">
+												<img src="./img/icons/title02.svg" alt="">
+											</div>
+											<div class="tile-title">Пропущенные заявки <span class="text-danger">(3)</span></div>
+										</div>
+										<div class="tile-content-wrap">
+											<table class="table table-striped">
+												<tbody>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b></td>
+														<td>Иванов&nbsp;И.И.</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b></td>
+														<td>Петров&nbsp;И.А.</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+													<tr>
+														<td><b class="text-large">Заявка №&nbsp;12345690 </b></td>
+														<td>Сидоров&nbsp;А.А.</td>
+														<td><a href="" class="link-main text-dark">Подробности</a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="tile-footer-wrap">
+											<a href="" class="link-main">Все заявки</a>
+										</div>
+									</div>
+								</div>
+								<!--/item wrap-->
+								<!--item wrap-->
+								<div class="item-wrap">
+									<div class="item-tile-card cnt-box">
+										<div class="tile-title-wrap">
+											<div class="tile-ico">
+												<img src="./img/icons/title03.svg" alt="">
+											</div>
+											<div class="tile-title">Не прочитанные сообщения  <span class="text-danger">(3)</span></div>
+										</div>
+										<div class="tile-content-wrap">
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+											<!--item tile order-->
+											<div class="item-tile-order">
+												<div class="tile-order-title-wrap">
+													<div class="tile-order-title">Заявка № 12345690  <span class="tile-order-status bg-danger"></span></div>
+													<div class="tile-order-link">
+														<a href="" class="link-main">Ответить</a>
+													</div>
+												</div>
+												<div class="tile-order-text-wrap">
+													<p>Вот вам яркий пример современных тенденций — социально-экономическое развитие влечет за собой процесс внедрения и модернизации модели развития. Сложно сказать, почему тщательные исследования конкурентов подвергнуты....</p>
+												</div>
+												<div class="tile-order-info-wrap">
+													<div class="tile-order-user">
+														<div class="elm-user">
+															<div class="elm-ico">
+																<img src="./img/icons/user-inner.svg" alt="">
+															</div>
+															<div class="user-title">Инженер Сидоров</div>
+														</div>
+													</div>
+													<div class="tile-order-info">
+														<div class="tile-order-date">12.12 12.09.2023</div>
+														<div class="tile-order-total">
+															<a href="" class="btn-action-icon">
+																<span class="button-ico">
+																	<img src="./img/icons/chat.svg" alt="">
+																</span>
+																<span class="button-title">10</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--/item tile order-->
+										</div>
+										<div class="tile-footer-wrap">
+											<a href="" class="link-main">Все сообщения</a>
+										</div>
+									</div>
+								</div>
+								<!--/item wrap-->
+							</div>
+						</div>
+						<!--/grid-item-->
+						
+						<!--grid-item-->
+						<div class="grid-item side-panel-box">
+							
+							<!--grid-item-inner-->
+							<div class="grid-item-inner objects-panel-box">
+								<div class="cnt-box">
+									objects-panel-box
+								</div>
+							</div>
+							<!--/grid-item-inner-->
+							
+							<!--grid-item-inner-->
+							<div class="grid-item-inner totals-panel-box">
+								<div class="cnt-box">
+									totals-panel-box
+								</div>
+							</div>
+							<!--/grid-item-inner-->
+							
+						</div>
+						<!--/grid-item-->
+						
+					</div>
+					<!--/main-grid-box-->
+					
+				</section>
+				
+			</div>
+			
+			<!-- build:section footer -->
+			<!-- /build -->
+		
+		</div>
+		
+		<!-- build:section scripts -->
+		<!-- /build -->
+	</body>
 </html>

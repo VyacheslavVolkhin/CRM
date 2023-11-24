@@ -1,14 +1,45 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #000000;
+    --clr-title: #343A40;
+	--clr-att: #1A73E8;
+	--clr-att-hover: #0056b3;
+    --clr-border: #C2C7D0;
+	--clr-light: #e4e4e;
+    
+    /*
+    
+    
+     --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
 
-	--min: 320px;
-	--max: 1200px;
 
-	font-size: 10px;
-}
-.sl-wrap~.sl-wrap {
-	display: none;
+    */
 }
 .elm-hidden {
 	display: none;
@@ -16,47 +47,49 @@
 /* ----------------------------------- *\
 			main styles
 \* ----------------------------------- */
-body {
-	color: var(--clr-base, #000);
-	background: #fff;
-}
-p, ul, ol {
-	position: relative;
-	img {
-		max-width: 100%;
-	}
-	&:last-child {
-		margin-bottom: 0 !important;
-	}
-}
-
-li {
-	position: relative;
-}
-a {
-	text-decoration: none;
-	color: var(--clr-att, #f00);
-	&:hover {
-		text-decoration: none;
-		color: var(--clr-att, #f00);
-	}
+.menu, .list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+        list-style-type: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
 }
 a.link-main, .link-main {
-	text-decoration: none;
-	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
-	}
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:hover {
+    }
 }
-h1, .h1-title,
-h2, .h2-title,
-h3, .h3-title,
-h4, .h4-title,
-h5, .h5-title,
-h6, .h6-title {
+.link-phone {
+    white-space: nowrap;
+}
+.h1-title,
+.h2-title,
+.h3-title,
+.h4-title,
+.h5-title,
+.h6-title {
 	display: block;
 	position: relative;
+    font-weight: bold;
+    margin: 1em 0;
     &:first-child {
         margin-top: 0;
     }
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
 }

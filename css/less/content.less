@@ -1,6 +1,124 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.map-popup-box {
+    position: relative;
+    z-index: 20;
+    background: #fff;
+    box-shadow: 0px 15px 35px 0px rgba(38, 51, 77, 0.15);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 306px;
+    display: none;
+    padding: 16px 20px;
+    &.active {
+        display: flex;
+        align-items: center;
+    }
+    .popup-title {
+        display: block;
+        flex: 1;
+        padding: 0  0 0 10px;
+        text-transform: uppercase;
+    }
+    .btn-action-ico {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.ico-cross {
+            &:before {
+                background-size: 16px auto;
+            }
+        }
+    }
+    .elm-ico {
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        border: 1px solid var(--clr-border);
+        background-color: #fff;
+        flex-shrink: 0;
+    }
+}
+.totals-panel-box {
+    .items-wrap {
+        margin: 0 -10px;
+    }
+    .item-wrap {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+.objects-panel-box {
+    .items-wrap {
+        margin: 0 0 8px 0;
+    }
+    .item-wrap {
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .slider-inner-wrap {
+        width: 146px;
+        position: static;
+    }
+    .slider-outer-wrap {
+        position: relative;
+        display: none;
+    }
+    .slider-wrap {
+        margin: 0 -5px;
+    }
+    .sl-wrap {
+        padding: 0 5px;
+    }
+    .slick-slide {
+        &:not(.slick-active) {
+            .text-danger {
+                color: inherit !important;
+            }
+        }
+    }
+    .slick-active {
+        .sl-title {
+            color: var(--clr-base);
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    .sl-title {
+        display: block;
+        position: relative;
+        text-align: center;
+        height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #C2C7D0;
+        text-transform: uppercase;
+        line-height: 30px;
+        transition: all ease 0.2s;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity ease 0.2s;
+            border: 1px solid var(--primary);
+            border-radius: 5px;
+        }
+    }
+}
 .tiles-panel-box {
     padding: 0 10px;
     margin-bottom: 5px;
@@ -14,6 +132,12 @@
         position: relative;
         overflow: hidden;
         margin: 0 -20px;
+        .elm-point {
+            transform: translateY(-50%);
+        }
+        .map-popup-box {
+            transform: translateY(-50%);
+        }
     }
     .map-legends-wrap {
         margin: 20px -35px 0 0;
@@ -164,6 +288,14 @@
     }
 }
 @media (max-width: 992px) {
+    .map-popup-box {
+        width: 194px;
+        padding: 5px 20px;
+        .btn-action-ico {
+            width: 18px;
+            height: 18px;
+        }
+    }
     .filter-panel-box {
         .filter-action-wrap {
             cursor: pointer;
@@ -214,6 +346,28 @@
     }
 }
 @media (min-width: 768px) {
+    .totals-panel-box {
+        .items-wrap {
+            margin: 0 -8px;
+        }
+        .item-wrap {
+            width: 50%;
+            padding: 0 8px;
+        }
+    }
+    .objects-panel-box {
+        .cnt-box {
+            padding-left: 5px;
+            padding-right: 5px;
+            .cnt-title-wrap {
+                margin-left: -5px;
+                margin-right: -5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-bottom: 15px;
+            }
+        }
+    }
     .map-panel-box {
         .map-legends-wrap {
             margin-top: 10px;
@@ -244,6 +398,15 @@
 }
 
 @media (min-width: 993px) {
+    .totals-panel-box {
+        .items-wrap {
+            margin: 0 -10px;
+        }
+        .item-wrap {
+            padding: 0 10px;
+            width: 100%;
+        }
+    }
     .tiles-panel-box {
         .items-wrap {
             display: grid;

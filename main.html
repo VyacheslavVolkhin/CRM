@@ -58,7 +58,9 @@
     <script src="./index_files/ckeditor.js"></script>
 
     <meta name="csrf-token" content="jK9sm06iLepagbil3QvP0KPD1rRkt1fOgNR2KpeB">
+    <script src="./js/slick.min.js"></script>
     <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -1820,24 +1822,35 @@
                             <div class="map-panel-box">
                                 <div class="map-inner-wrap">
                                     <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+                                    <div class="elm-point" style="position: absolute;top: 50%;left: 50%;">
+                                        <img src="./img/logo.svg" alt="">
+                                    </div>
+                                    <div class="map-popup-box active" style="position: absolute;top: 50%;left: 55%;">
+                                        <div class="elm-ico">
+                                            <img src="./img/logo.svg" alt="">
+                                        </div>
+                                        <div class="popup-title">АЗС 77525</div>
+                                        <a href="" class="btn-action-ico ico-cross"></a>
+                                        <a href="" class="btn-action-ico ico-go"></a>
+                                    </div>
                                 </div>
                                 <div class="map-legends-wrap">
                                     <div class="legend-title">Значки на &nbsp;карте:</div>
                                     <div class="legend-items">
                                         <div class="elm-legend">
-                                            <span class="bg-primary legend-color"></span>
+                                            <span class="bg-primary elm-status"></span>
                                             Новый объект
                                         </div>
                                         <div class="elm-legend">
-                                            <span class="bg-success legend-color"></span>
+                                            <span class="bg-success elm-status"></span>
                                             В работе
                                         </div>
                                         <div class="elm-legend">
-                                            <span class="bg-warning legend-color"></span>
+                                            <span class="bg-warning elm-status"></span>
                                             Время на исходе
                                         </div>
                                         <div class="elm-legend">
-                                            <span class="bg-danger legend-color"></span>
+                                            <span class="bg-danger elm-status"></span>
                                             Просрочено
                                         </div>
                                         <div class="elm-legend">
@@ -1963,7 +1976,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -1997,7 +2010,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -2031,7 +2044,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -2065,7 +2078,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -2099,7 +2112,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -2133,7 +2146,7 @@
                                         <!--item tile order-->
                                         <div class="item-tile-order">
                                             <div class="tile-order-title-wrap">
-                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-order-status bg-danger"></span></div>
+                                                <div class="tile-order-title">Заявка № 12345690 <span class="tile-status bg-danger"></span></div>
                                                 <div class="tile-order-link">
                                                     <a href="" class="link-main">Ответить</a>
                                                 </div>
@@ -2181,15 +2194,1594 @@
                         <!--grid-item-inner-->
                         <div class="grid-item-inner objects-panel-box">
                             <div class="cnt-box">
-                                objects-panel-box
+                                <div class="cnt-title-wrap title-clear">
+                                    <div class="cnt-title"><b>Объекты рядом</b></div>
+                                </div>
+                                <div class="slider-outer-wrap">
+                                    <div class="slider-inner-wrap">
+                                        <div class="slider-wrap">
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                            <div class="sl-wrap">
+                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle active">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <div class="cnt-box">
+                                <div class="cnt-title-wrap title-clear">
+                                    <div class="cnt-title"><b>Последние счета</b></div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-object js-popup-wrap no-close">
+                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                                <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
+                                                <div class="tile-action">
+                                                    <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-content-block js-popup-block">
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row">
+                                                        <div class="row-title">
+                                                            <div class="tile-status bg-warning"></div>
+                                                            Время на исходе
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Тип заявки:</div>
+                                                        <div class="row-value">Кровля</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Дата:</div>
+                                                        <div class="row-value">12.05.2021</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">RC код:</div>
+                                                        <div class="row-value">MR004</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Объект:</div>
+                                                        <div class="row-value">АЗС 77525</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Сложность заявки:</div>
+                                                        <div class="row-value">Сложно</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Категория:</div>
+                                                        <div class="row-value">5 (240ч)</div>
+                                                    </div>
+                                                    <div class="tile-row row-full">
+                                                        <div class="row-title">Описание проблемы</div>
+                                                        <div class="row-value">
+                                                            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: понимание сути ресурсосберегающих технологий позволяет оценить значение направлений прогрессивного развития. Также как дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для системы обучения кадров, соответствующей насущным потребностям. Таким образом, выбранный нами инновационный путь создаёт предпосылки для вывода.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <a href="" class="btn btn-primary button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/cht.svg" alt="">
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="tile-action-wrap">
+                                                        <button class="btn btn-info button-vsmall">
+                                                            <span class="button-ico">
+                                                                <img src="./img/icons/filter03.svg" alt="">
+                                                            </span>
+                                                            <span class="button-title">Добавить пользователя</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="tile-rows-wrap">
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке работники:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Попов АВ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Ивановский ТГ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Михайлов ИИ</div>
+                                                        <div class="row-value">
+                                                            <a href="tel:80000000000" class="btn-action-icon">
+                                                                <span class="button-ico">
+                                                                    <img src="./img/icons/send.svg" alt="">
+                                                                </span>
+                                                                <span class="button-title link-main">+7 (000) 000 00 00</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-row row-head">
+                                                        <div class="row-title">На заявке Автомобили:</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Reno 123DFC</div>
+                                                    </div>
+                                                    <div class="tile-row">
+                                                        <div class="row-title">Kamaz 123AOP</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
                             </div>
                         </div>
                         <!--/grid-item-inner-->
 
                         <!--grid-item-inner-->
                         <div class="grid-item-inner totals-panel-box">
-                            <div class="cnt-box">
-                                totals-panel-box
+                            <div class="items-wrap">
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <div class="item-tile-total cnt-box">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title-inner title-row">
+                                                <div class="tile-title">Статистика средней выработки</div>
+                                                <div class="tile-title-total">60%</div>
+                                            </div>
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/total01.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-content-wrap">
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За текущий месяц</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За текущий квартал</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За половину 2023 года</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За 2023 год</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <div class="item-tile-total cnt-box">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title-inner">
+                                                <div class="tile-title">Затраты</div>
+                                                <div class="tile-title-total">1 млн. р.</div>
+                                            </div>
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/total02.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-content-wrap">
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За текущий месяц</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За текущий квартал</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За половину 2023 года</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                            <div class="tile-row row-main">
+                                                <div class="row-title">За 2023 год</div>
+                                                <div class="row-value">352</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/item wrap-->
                             </div>
                         </div>
                         <!--/grid-item-inner-->

@@ -116,8 +116,10 @@ window.onload = (event) => {
 };
 
 $(document).ready(function () {
+	//menu toggle
 	$('.js-btn-menu-toggle').on('click', function() {
 		$(this).toggleClass('active');
 		return false;
 	})
+
 });

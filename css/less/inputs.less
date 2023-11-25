@@ -42,6 +42,7 @@
             text-decoration: underline;
         }
     }
+    &.button-vsmall,
     &.button-small,
     &.button-main {
         display: inline-flex;
@@ -55,6 +56,11 @@
         line-height: 1.1;
         position: relative;
         overflow: hidden;
+    }
+    &.button-vsmall {
+        height: 26px;
+        padding: 0 10px;
+        font-size: 12px;
     }
     &.button-small {
         height: 34px;
@@ -131,6 +137,16 @@
         &:not(.btn) {
             background: none;
             box-shadow: none;
+        }
+    }
+    &.ico-cross {
+        &:before {
+            background-image: url(../img/icons/cross.svg);
+        }
+    }
+    &.ico-go {
+        &:before {
+            background-image: url(../img/icons/arrow-go.svg);
         }
     }
     &.ico-arrow {

@@ -121,5 +121,11 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		return false;
 	})
+	
+	//filter
+	$('.js-btn-filter-toggle').on('click', function() {
+		$('.filter-panel-box .filter-action-wrap').toggleClass('active');
+		return false;
+	})
 
 });

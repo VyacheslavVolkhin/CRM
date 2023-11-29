@@ -98,109 +98,131 @@
 												<span class="button-title">Отфильтровать заявки</span>
 											</div>
 										</div>
-										<div class="filter-content-form">
-											<div class="frm-row">
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Тип заявки</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Сложность заявки</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Категория заявки</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Куратор зоны</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Зоны</option>
-													</select>
-												</div>
-												<div class="frm-field field-half">
-													<select class="custom-select form-small">
-														<option>Трекеры</option>
-													</select>
-												</div>
-												<div class="frm-field field-half">
-													<select class="custom-select form-small">
-														<option>Тип</option>
-													</select>
-												</div>
-												<div class="frm-field field-half">
-													<div class="input-group date" id="date-start" data-target-input="nearest">
-														<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-start" placeholder="Дата с">
-														<div class="input-group-append input-small" data-target="#date-start" data-toggle="datetimepicker">
-															<div class="input-group-text">
-																<div class="button-ico">
-																	<img src="./img/icons/calendar.svg" alt="">
+										<div class="filter-content-inner">
+											<div class="filter-content-form">
+												<div class="frm-row">
+													<div class="frm-field">
+														<input name="type-orders" type="text" list="type-orders" class="custom-select form-small" placeholder="Тип заявки">
+														<datalist id="type-orders">
+															<option>Тип заявки</option>
+															<option>Тип заявки</option>
+															<option>Тип заявки</option>
+															<option>Тип заявки</option>
+														</datalist>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Сложность заявки</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Категория заявки</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Куратор зоны</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Зоны</option>
+														</select>
+													</div>
+													<div class="frm-field field-half">
+														<select class="custom-select form-small">
+															<option>Трекеры</option>
+														</select>
+													</div>
+													<div class="frm-field field-half">
+														<select class="custom-select form-small">
+															<option>Тип</option>
+														</select>
+													</div>
+													<div class="frm-field field-half">
+														<div class="input-group date" id="date-start" data-target-input="nearest">
+															<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-start" placeholder="Дата с">
+															<div class="input-group-append input-small" data-target="#date-start" data-toggle="datetimepicker">
+																<div class="input-group-text">
+																	<div class="button-ico">
+																		<img src="./img/icons/calendar.svg" alt="">
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="frm-field field-half">
-													<div class="input-group date" id="date-end" data-target-input="nearest">
-														<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-end" placeholder="Дата по">
-														<div class="input-group-append input-small" data-target="#date-end" data-toggle="datetimepicker">
-															<div class="input-group-text">
-																<div class="button-ico">
-																	<img src="./img/icons/calendar.svg" alt="">
+													<div class="frm-field field-half">
+														<div class="input-group date" id="date-end" data-target-input="nearest">
+															<input type="text" class="form-control form-small datetimepicker-input" data-target="#date-end" placeholder="Дата по">
+															<div class="input-group-append input-small" data-target="#date-end" data-toggle="datetimepicker">
+																<div class="input-group-text">
+																	<div class="button-ico">
+																		<img src="./img/icons/calendar.svg" alt="">
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Контракты</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Заказчики</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Объекты</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Ст. просрочки</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Автомобиль</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="custom-select form-small">
+															<option>Механик</option>
+														</select>
+													</div>
 												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Контракты</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Заказчики</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Объекты</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Ст. просрочки</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Автомобиль</option>
-													</select>
-												</div>
-												<div class="frm-field">
-													<select class="custom-select form-small">
-														<option>Механик</option>
-													</select>
+											</div>
+											<div class="filter-content-actions">
+												<div class="frm-row">
+													<div class="frm-field field-submit">
+														<button type="submit" class="btn btn-primary button-small">Отфильтровать заявки</button>
+													</div>
+													<div class="frm-field field-reset">
+														<button type="reset" class="btn btn-link btn-underline button-small">Очистить фильтр</button>
+													</div>
+													<div class="frm-field field-close">
+														<button type="button" class="btn btn-link btn-underline button-small js-btn-popup-close">Закрыть</button>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="filter-content-actions">
-											<div class="frm-row">
-												<div class="frm-field field-submit">
-													<button type="submit" class="btn btn-primary button-small">Отфильтровать заявки</button>
+									</div>
+									<div class="filter-content-selected active">
+										<div class="frm-row">
+											<div class="frm-field">
+												<div class="btn">
+													<div class="button-title">Объект АЗС 50401</div>
+													<a href="" class="btn-action-ico ico-del"></a>
 												</div>
-												<div class="frm-field field-reset">
-													<button type="reset" class="btn btn-link btn-underline button-small">Очистить фильтр</button>
-												</div>
-												<div class="frm-field field-close">
-													<button type="button" class="btn btn-link btn-underline button-small js-btn-popup-close">Закрыть</button>
+											</div>
+											<div class="frm-field">
+												<div class="btn">
+													<div class="button-title">Контракт Лукойл 03.2024</div>
+													<a href="" class="btn-action-ico ico-del"></a>
 												</div>
 											</div>
 										</div>
@@ -211,7 +233,7 @@
 								<div class="items-panel-box">
 									<div class="items-wrap">
 										<div class="item-wrap">
-											<div class="small-box bg-info">
+											<a href="" class="small-box bg-info">
 												<div class="inner">
 													<p>Кол-во объектов</p>
 													<h3>665</h3>
@@ -219,10 +241,10 @@
 												<div class="icon">
 													<img src="./img/icons/tile01.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 										<div class="item-wrap">
-											<div class="small-box bg-success">
+											<a href="" class="small-box bg-success">
 												<div class="inner">
 													<p>Заявок выполнено</p>
 													<h3>140399</h3>
@@ -230,10 +252,10 @@
 												<div class="icon">
 													<img src="./img/icons/tile02.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 										<div class="item-wrap">
-											<div class="small-box bg-primary">
+											<a href="" class="small-box bg-primary">
 												<div class="inner">
 													<p>Заявок в работе</p>
 													<h3>6104</h3>
@@ -241,10 +263,10 @@
 												<div class="icon">
 													<img src="./img/icons/tile03.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 										<div class="item-wrap">
-											<div class="small-box bg-danger">
+											<a href="" class="small-box bg-danger">
 												<div class="inner">
 													<p>Заявок просрочено</p>
 													<h3>455</h3>
@@ -252,10 +274,10 @@
 												<div class="icon">
 													<img src="./img/icons/tile04.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 										<div class="item-wrap">
-											<div class="small-box bg-warning">
+											<a href="" class="small-box bg-warning">
 												<div class="inner">
 													<p>В работе / всего</p>
 													<h3>79/181</h3>
@@ -263,10 +285,10 @@
 												<div class="icon">
 													<img src="./img/icons/tile05.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 										<div class="item-wrap">
-											<div class="small-box bg-gray-light">
+											<a href="" class="small-box bg-gray-light">
 												<div class="inner">
 													<p>В работе/Просрочено</p>
 													<h3>6104/2074</h3>
@@ -274,7 +296,7 @@
 												<div class="icon">
 													<img src="./img/icons/tile06.svg" alt="">
 												</div>
-											</div>
+											</a>
 										</div>
 									</div>
 								</div>

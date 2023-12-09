@@ -149,6 +149,10 @@
     .tile-content-block {
         display: none;
         padding: 0 10px 10px 10px;
+        animation: fadein ease 0.2s;
+    }
+    .tile-title-wrap.active+.tile-content-block {
+        display: block;
     }
     .tile-row {
         margin-bottom: 5px;

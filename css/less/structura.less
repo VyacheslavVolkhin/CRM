@@ -83,6 +83,7 @@ body {
         }
     }
     .btn-popup-toggle {
+        display: none;
         width: 40px;
         height: 40px;
         position: absolute;
@@ -92,6 +93,12 @@ body {
                 opacity: 1;
                 left: 0;
             }
+        }
+    }
+    &.active {
+        .menu-content-block {
+            opacity: 1;
+            left: 0;
         }
     }
     .btn-popup-close {
@@ -243,6 +250,17 @@ body {
 .main-footer {
     text-align: right;
 }
+.main-header {
+    .navbar-nav {
+        align-items: center;
+        .nav-item {
+            margin-left: 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
 .header {
     box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
     border: none;
@@ -381,6 +399,18 @@ body {
     }
 }
 @media (max-width: 992px) {
+    .navbar-nav {
+        .btn {
+            &.button-categories {
+                .button-title {
+                    display: none;
+                }
+                .button-ico {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
     .content-wrapper {
         padding-top: 15px;
     }
@@ -422,6 +452,24 @@ body {
     }
 }
 @media (max-width: 743px) {
+    .navbar-nav {
+
+        .btn-action-user {
+            .button-title {
+                display: none;
+            }
+        }
+        .btn-action-icon {
+            &.button-notify {
+                .button-title {
+                    display: none;
+                }
+                .button-ico {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
     .popup-menu-wrap {
         .btn-popup-toggle {
             left: 15px;
@@ -468,7 +516,30 @@ body {
         }
     }
 }
+@media (max-width: 575px) {
+    .navbar-nav {
+        
+    }
+}
 @media (min-width: 744px) {
+    .navbar-nav {
+        .btn-action-icon {
+           &.button-exit {
+               height: 44px;
+               width: 54px;
+               border-radius: 5px;
+               background: var(--primary);
+               border: 1px solid var(--primary);
+               .button-ico {
+                   filter: brightness(0) invert(1);
+               }
+               &:hover {
+                   background-color: #0069d9;
+                   border-color: #0062cc
+               }
+           }
+        }
+    }
     .header {
         .action-exit {
             .btn-action-icon {

@@ -168,6 +168,20 @@ input[list]{
         &:hover {
         }
     }
+    &.ico-arrow-small {
+        border: none;
+        background: none;
+        &:before {
+            background-image: url(../img/icons/arrow-slider-small.svg);
+            background-size: 30px auto;
+            opacity: 0.2;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
     &.ico-arrow-prev {
         &:before {
             .t-rotate(180deg);
@@ -201,6 +215,11 @@ input[list]{
         &:before {
             background-image: url(../img/icons/cross.svg);
             background-size: 20px auto;
+        }
+        &:hover {
+            &:before {
+                opacity: 0.4;
+            }
         }
     }
     &.button-soc {

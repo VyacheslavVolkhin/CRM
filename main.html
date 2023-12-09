@@ -70,64 +70,126 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header header">
-            <div class="logo-wrap">
-                <a href="" class="logo">
-                    <span class="logo-image">
-                        <img src="./img/main/logo.svg" alt="">
-                    </span>
-                    <span class="logo-title">CRM</span>
-                </a>
-            </div>
-            <div class="user-wrap">
-                <a href="" class="btn-action-user">
-                    <span class="button-ico">
-                        <img src="./img/icons/user.svg" alt="">
-                    </span>
-                    <span class="button-title">Имя Фамилия</span>
-                </a>
-            </div>
-            <div class="actions-wrap">
-                <div class="action-wrap action-notify">
-                    <a href="" class="btn-action-icon">
+        <!--<nav class="main-header header">-->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="logo">
+                        <span class="logo-image">
+                            <img src="./img/main/logo.svg" alt="">
+                        </span>
+                        <span class="logo-title">CRM</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="btn-action-ico ico-menu js-side-menu-toggle"></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="" class="btn-action-user">
+                        <span class="button-ico">
+                            <img src="./img/icons/user.svg" alt="">
+                        </span>
+                        <span class="button-title">Имя Фамилия</span>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="" class="btn-action-icon button-notify">
                         <span class="button-ico">
                             <img src="./img/icons/notify.svg" alt="">
                         </span>
                         <span class="button-title">Оповещения</span>
                     </a>
-                </div>
-                <div class="action-wrap action-settings">
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
                     <a href="" class="btn-action-icon">
                         <span class="button-ico">
                             <img src="./img/icons/settings.svg" alt="">
                         </span>
                     </a>
-                </div>
-                <div class="action-wrap action-search">
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
                     <a href="" class="btn-action-icon">
                         <span class="button-ico">
                             <img src="./img/icons/search.svg" alt="">
                         </span>
                     </a>
-                </div>
-                <div class="action-wrap action-exit">
-                    <a href="" class="btn-action-icon">
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="" class="btn-action-icon button-exit">
                         <span class="button-ico">
                             <img src="./img/icons/exit.svg" alt="">
                         </span>
                     </a>
-                </div>
-            </div>
-            <div class="button-wrap">
-                <button class="btn btn-primary">
-                    <span class="button-ico">
-                        <img src="./img/icons/button01.svg" alt="">
-                    </span>
-                    <span class="button-title">Установите важные разделы для вас</span>
-                </button>
-            </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button class="btn btn-primary button-categories">
+                        <span class="button-ico">
+                            <img src="./img/icons/button01.svg" alt="">
+                        </span>
+                        <span class="button-title">Установите важные разделы для вас</span>
+                    </button>
+                </li>
+            </ul>
+            <!--	<div class="logo-wrap">
+		<a href="" class="logo">
+			<span class="logo-image">
+				<img src="./img/main/logo.svg" alt="">
+			</span>
+			<span class="logo-title">CRM</span>
+		</a>
+	</div>
+	<div class="user-wrap">
+		<a href="" class="btn-action-user">
+			<span class="button-ico">
+				<img src="./img/icons/user.svg" alt="">
+			</span>
+			<span class="button-title">Имя Фамилия</span>
+		</a>
+	</div>
+	<div class="actions-wrap">
+		<div class="action-wrap action-notify">
+			<a href="" class="btn-action-icon">
+			<span class="button-ico">
+				<img src="./img/icons/notify.svg" alt="">
+			</span>
+				<span class="button-title">Оповещения</span>
+			</a>
+		</div>
+		<div class="action-wrap action-settings">
+			<a href="" class="btn-action-icon">
+			<span class="button-ico">
+				<img src="./img/icons/settings.svg" alt="">
+			</span>
+			</a>
+		</div>
+		<div class="action-wrap action-search">
+			<a href="" class="btn-action-icon">
+				<span class="button-ico">
+					<img src="./img/icons/search.svg" alt="">
+				</span>
+			</a>
+		</div>
+		<div class="action-wrap action-exit">
+			<a href="" class="btn-action-icon">
+				<span class="button-ico">
+					<img src="./img/icons/exit.svg" alt="">
+				</span>
+			</a>
+		</div>
+	</div>
+	<div class="button-wrap">
+		<button class="btn btn-primary">
+			<span class="button-ico">
+				<img src="./img/icons/button01.svg" alt="">
+			</span>
+			<span class="button-title">Установите важные разделы для вас</span>
+		</button>
+	</div>-->
         </nav>
         <!-- /.navbar -->
+
 
         <!--mobile panel box-->
         <div class="mobile-panel-box">
@@ -160,8 +222,7 @@
 
         <!-- Main menu Container -->
         <aside class="popup-menu-wrap js-side-menu">
-            <a href="" class="btn-action-ico ico-menu btn-popup-toggle js-side-menu-toggle"></a>
-            <div class="menu-content-block js-popup-block">
+            <div class="menu-content-block">
                 <a href="" class="btn-popup-close btn-action-ico ico-close js-side-menu-close"></a>
                 <div class="menu-wrap">
                     <ul class="menu">
@@ -1845,15 +1906,15 @@
                                         </a>
                                     </div>
                                     <div class="item-wrap">
-                                        <a href="" class="small-box bg-warning">
+                                        <div class="small-box bg-warning">
                                             <div class="inner">
-                                                <p>В работе / всего</p>
-                                                <h3>79/181</h3>
+                                                <p><a href="">В работе / всего</a></p>
+                                                <h3><a href="">79/181</a></h3>
                                             </div>
                                             <div class="icon">
                                                 <img src="./img/icons/tile05.svg" alt="">
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
                                     <div class="item-wrap">
                                         <a href="" class="small-box bg-gray-light">
@@ -2248,29 +2309,31 @@
                                 <div class="cnt-title-wrap title-clear">
                                     <div class="cnt-title"><b>Объекты рядом</b></div>
                                 </div>
-                                <div class="slider-outer-wrap">
+                                <div class="slider-outer-wrap slider-tabs-box">
                                     <div class="slider-inner-wrap">
                                         <div class="slider-wrap">
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
-                                            </div>
-                                            <div class="sl-wrap">
-                                                <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                            <div class="slider">
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
+                                                <div class="sl-wrap">
+                                                    <div class="sl-title">АЗС 77525 <span class="text-danger">(6)</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2278,14 +2341,14 @@
                                 <div class="items-wrap">
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -2401,14 +2464,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle active">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button active">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -2524,14 +2587,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -2647,14 +2710,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -2770,14 +2833,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -2893,14 +2956,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3016,14 +3079,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Заявка №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3146,14 +3209,14 @@
                                 <div class="items-wrap">
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3269,14 +3332,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3392,14 +3455,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3515,14 +3578,14 @@
                                     <!--/item wrap-->
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">
@@ -3636,16 +3699,17 @@
                                         </div>
                                     </div>
                                     <!--/item wrap-->
+
                                     <!--item wrap-->
                                     <div class="item-wrap">
-                                        <div class="item-tile-object js-popup-wrap no-close">
-                                            <div class="tile-title-wrap js-btn-popup-toggle">
+                                        <div class="item-tile-object">
+                                            <div class="tile-title-wrap js-toggle-button">
                                                 <div class="tile-title">Счет №: <span class="tile-number">12345690</span></div>
                                                 <div class="tile-action">
                                                     <div class="link-main" data-show="Подробности" data-hide="Свернуть"></div>
                                                 </div>
                                             </div>
-                                            <div class="tile-content-block js-popup-block">
+                                            <div class="tile-content-block">
                                                 <div class="tile-rows-wrap">
                                                     <div class="tile-row">
                                                         <div class="row-title">

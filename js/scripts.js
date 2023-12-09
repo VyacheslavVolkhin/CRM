@@ -102,13 +102,13 @@ window.onload = (event) => {
 	let menuSideElementToggle = document.querySelector('.js-side-menu-toggle')
 	let menuSideElementClose = document.querySelector('.js-side-menu-close')
 	menuSideElementToggle.addEventListener('click', function(e) {
-		this.classList.toggle('active')
+		menuSideElement.classList.toggle('active')
 		e.preventDefault()
 		e.stopPropagation()
 		return false
 	})
 	menuSideElementClose.addEventListener('click', function(e) {
-		menuSideElementToggle.classList.toggle('active')
+		menuSideElement.classList.toggle('active')
 		e.preventDefault()
 		e.stopPropagation()
 		return false
@@ -116,6 +116,40 @@ window.onload = (event) => {
 };
 
 $(document).ready(function () {
+
+
+	//slider-tabs-box
+	if (!!$('.slider-tabs-box').offset()) {
+		$('.slider-tabs-box .slider').slick({
+			dots: false,
+			slidesToShow: 1,
+			variableWidth: true,
+			centerMode: true,
+			infinite: false,
+			adaptiveHeight: false,
+			rows: 1,
+			swipeToSlide: true,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-small ico-arrow-prev"></span>',
+			nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-small ico-arrow-next"></span>',
+		});
+
+	}
+	
+	
+	//toggle block
+	$('.js-toggle-button').on('click', function() {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active')
+		} else {
+			$(this).parents('.items-wrap').find('.active').removeClass('active')
+			$(this).addClass('active')
+		}
+		return false;
+	})
+	
+	
 	//menu toggle
 	$('.js-btn-menu-toggle').on('click', function() {
 		$(this).toggleClass('active');

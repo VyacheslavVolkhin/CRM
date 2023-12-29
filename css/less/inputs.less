@@ -75,6 +75,30 @@ input[list]{
     &.button-small {
         height: 34px;
     }
+    &.btn-gray-light {
+        background-color: #C2C7D0;
+        &:hover {
+            background-color: #C2C7D0 - #111;
+        }
+    }
+    &.btn-gray {
+        background-color: #869099;
+        &:hover {
+            background-color: #869099 - #111;
+        }
+    }
+    &.btn-orange {
+        background-color: #FD7E14;
+        &:hover {
+            background-color: #FD7E14 - #111;
+        }
+    }
+    &.btn-clear {
+        background-color: transparent;
+        &:hover {
+            background-color: transparent;
+        }
+    }
     .button-ico {
         display: inline-block;
         vertical-align: middle;
@@ -95,6 +119,11 @@ input[list]{
         position: relative;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    &.btn-fav {
+        &.active {
+            
+        }
     }
 }
 .btn-action-ico {

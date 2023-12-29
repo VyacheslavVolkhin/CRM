@@ -15126,16 +15126,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/side.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/side.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icons/Outlined/Cross.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sequoia/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sequoia/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sequoia/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sequoia/01.html" afterDir="false" />
@@ -15173,21 +15169,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vaceslavvolhin/Sites/0060/nikaCRM/_html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/vaceslavvolhin/Sites/0060/nikaCRM",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_html" />
@@ -15205,7 +15201,8 @@
       <workItem from="1700804825832" duration="9494000" />
       <workItem from="1700827140836" duration="18753000" />
       <workItem from="1701256546515" duration="3912000" />
-      <workItem from="1701677308303" duration="4944000" />
+      <workItem from="1701677308303" duration="6475000" />
+      <workItem from="1703672778260" duration="3542000" />
     </task>
     <servers />
   </component>

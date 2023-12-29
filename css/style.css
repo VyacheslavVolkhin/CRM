@@ -476,11 +476,16 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .navbar-nav .btn.button-categories .button-title {
+  .navbar-nav .btn.button-categories .button-title,
+  .navbar-nav .btn.button-menu .button-title {
     display: none;
   }
-  .navbar-nav .btn.button-categories .button-ico {
+  .navbar-nav .btn.button-categories .button-ico,
+  .navbar-nav .btn.button-menu .button-ico {
     margin: 0 auto;
+  }
+  .navbar-nav .btn.button-menu {
+    display: none;
   }
   .content-wrapper {
     padding-top: 15px;
@@ -802,6 +807,10 @@ body {
   margin-bottom: 5px;
   border-bottom: 1px solid var(--clr-border);
 }
+.item-tile-object .tile-actions-wrap.text-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
 .item-tile-object .tile-actions-wrap .tile-action-wrap {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -809,6 +818,10 @@ body {
 }
 .item-tile-object .tile-actions-wrap .tile-action-wrap:first-child {
   margin-left: 0;
+}
+.item-tile-object .tile-actions-wrap:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 .item-tile-object .tile-actions-wrap .btn {
   padding: 0 10px;
@@ -931,6 +944,12 @@ body {
 .item-tile-object .btn-action-icon .button-ico + .button-title {
   padding-left: 0;
   margin-left: 10px;
+}
+.item-tile-object .tile-status-text {
+  font-size: 10px;
+}
+.item-tile-object .tile-status-text.st-large {
+  font-size: 1em;
 }
 .item-tile-order {
   font-size: 12px;
@@ -1271,6 +1290,31 @@ body {
   margin: 0 10px 0 0;
   border: 1px solid var(--clr-border);
 }
+.elm-status-text,
+.tile-status-text {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 2px 5px;
+  color: #fff;
+  max-width: 100%;
+  white-space: nowrap;
+  background: #343A40;
+  border-radius: 5px;
+}
+.elm-status-text.bg-pink-light,
+.tile-status-text.bg-pink-light {
+  background-color: #FDA5AD;
+  color: var(--clr-title);
+}
+.elm-status-text.bg-gray-lighten,
+.tile-status-text.bg-gray-lighten {
+  background-color: #BDBDBD;
+}
+.elm-status-text.st-large,
+.tile-status-text.st-large {
+  padding: 3px 5px;
+}
 .elm-status,
 .tile-status {
   display: inline-block;
@@ -1289,6 +1333,18 @@ body {
 .tile-row {
   display: -ms-flexbox;
   display: flex;
+}
+.elm-row.row-col,
+.tile-row.row-col {
+  display: block;
+}
+.elm-row.row-col .row-value,
+.tile-row.row-col .row-value {
+  text-align: left;
+}
+.elm-row.row-col .row-title,
+.tile-row.row-col .row-title {
+  padding-right: 0;
 }
 .elm-row.row-main .row-title,
 .tile-row.row-main .row-title,
@@ -2216,6 +2272,30 @@ input[list] {
 }
 .btn.button-small {
   height: 34px;
+}
+.btn.btn-gray-light {
+  background-color: #C2C7D0;
+}
+.btn.btn-gray-light:hover {
+  background-color: #b1b6bf;
+}
+.btn.btn-gray {
+  background-color: #869099;
+}
+.btn.btn-gray:hover {
+  background-color: #757f88;
+}
+.btn.btn-orange {
+  background-color: #FD7E14;
+}
+.btn.btn-orange:hover {
+  background-color: #ec6d03;
+}
+.btn.btn-clear {
+  background-color: transparent;
+}
+.btn.btn-clear:hover {
+  background-color: transparent;
 }
 .btn .button-ico {
   display: inline-block;

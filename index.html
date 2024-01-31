@@ -123,32 +123,127 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item nav-item-menu">
                     <button class="btn btn-default button-menu">
                         <span class="button-ico">
-                            <img src="./img/icons/button02.svg" alt="">
+                            <img src="./img/icons/btn01.svg" alt="">
                         </span>
                         <span class="button-title">Заявки</span>
+                        <span class="btn-action-ico ico-del"></span>
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu active">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn02.svg" alt="">
+                        </span>
+                        <span class="button-title">Активные заявки</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
                     <button class="btn btn-default button-menu">
                         <span class="button-ico">
-                            <img src="./img/icons/button03.svg" alt="">
+                            <img src="./img/icons/btn03.svg" alt="">
+                        </span>
+                        <span class="button-title">Добавить</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn04.svg" alt="">
                         </span>
                         <span class="button-title">Закрытые</span>
+                        <span class="btn-action-ico ico-del"></span>
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-item-menu">
                     <button class="btn btn-default button-menu">
                         <span class="button-ico">
-                            <img src="./img/icons/button04.svg" alt="">
+                            <img src="./img/icons/btn05.svg" alt="">
                         </span>
-                        <span class="button-title">Импорт</span>
+                        <span class="button-title">Архив</span>
+                        <span class="btn-action-ico ico-del"></span>
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="btn btn-primary button-categories">
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn06.svg" alt="">
+                        </span>
+                        <span class="button-title">Импорт</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn07.svg" alt="">
+                        </span>
+                        <span class="button-title">Статистика</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn08.svg" alt="">
+                        </span>
+                        <span class="button-title">Контроль</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn09.svg" alt="">
+                        </span>
+                        <span class="button-title">Поиск дублей</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn10.svg" alt="">
+                        </span>
+                        <span class="button-title">Удаление</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn11.svg" alt="">
+                        </span>
+                        <span class="button-title">Рейтинг</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-menu">
+                    <button class="btn btn-default button-menu">
+                        <span class="button-ico">
+                            <img src="./img/icons/btn12.svg" alt="">
+                        </span>
+                        <span class="button-title">Сообщения к заявкам</span>
+                        <span class="btn-action-ico ico-del"></span>
+                    </button>
+                </li>
+                <li class="nav-item nav-item-dotted nav-item-last js-popup-wrap">
+                    <button class="btn js-btn-popup-toggle">
+                        <span class="button-ico">
+                            <img src="./img/icons/more-vertical.svg" alt="">
+                        </span>
+                    </button>
+                    <div class="nav-submenu js-popup-block">
+                        <a href="" class="btn-action-ico ico-close js-btn-popup-close"></a>
+                        <ul id="nav-submenu">
+
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary button-categories js-side-menu-widget-toggle">
                         <span class="button-ico">
                             <img src="./img/icons/button01.svg" alt="">
                         </span>
@@ -253,9 +348,9 @@
 
 
         <!-- Main menu Container -->
-        <aside class="popup-menu-wrap js-side-menu">
+        <aside class="popup-menu-wrap js-side-menu-widget">
             <div class="menu-content-block">
-                <a href="" class="btn-popup-close btn-action-ico ico-close js-side-menu-close"></a>
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-side-menu-widget-close"></a>
                 <div class="menu-wrap">
                     <ul class="menu">
                         <li class="submenu">

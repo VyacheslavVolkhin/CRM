@@ -26,6 +26,49 @@ body {
     border-radius: 15px;
     background: #fff;
     padding: 10px;
+	transition: all ease 0.2s;
+	&:not(.active) {
+		right: -54px;
+		.button-menu-toggle {
+
+		}
+	}
+	&.active {
+		.button-menu-toggle {
+			position: relative;
+			top: auto;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			box-shadow: none !important;
+			&.btn-action-ico {
+				&.ico-menu {
+					&:before {
+						background-image: url(../img/icons/cross.svg);
+					}
+				}
+			}
+		}
+	}
+	.button-menu-toggle {
+		position: absolute;
+		top: 20px;right: 100%;
+		width: 40px;height: 40px;
+		&.btn-action-ico {
+			box-shadow: 0 0 10px fade(#000, 10);
+			border-radius: 10px 0 0 10px;
+			background: #fff;
+			&:hover {
+				background: #fff;
+				box-shadow: 0 0 10px fade(#000, 10);
+			}
+			&.ico-menu {
+				&:before {
+					filter: brightness(0) grayscale(1);
+				}
+			}
+		}
+	}
     .btn-action-ico {
         width: 34px;
         height: 34px;

@@ -136,6 +136,13 @@ window.onload = (event) => {
 $(document).ready(function () {
 
 
+	//mobile buttons menu
+	$('.js-btn-mobile-menu-toggle').on('click', function() {
+		$('.mobile-panel-box').toggleClass('active');
+		return false;
+	})
+
+
 	//menu dotted
 	function menuMore() {
 		$('.main-header .nav-item-menu.menu-hidden').removeClass('menu-hidden')

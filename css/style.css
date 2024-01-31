@@ -137,6 +137,40 @@ body {
   border-radius: 15px;
   background: #fff;
   padding: 10px;
+  transition: all ease 0.2s;
+}
+.mobile-panel-box:not(.active) {
+  right: -54px;
+}
+.mobile-panel-box.active .button-menu-toggle {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  box-shadow: none !important;
+}
+.mobile-panel-box.active .button-menu-toggle.btn-action-ico.ico-menu:before {
+  background-image: url(../img/icons/cross.svg);
+}
+.mobile-panel-box .button-menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 100%;
+  width: 40px;
+  height: 40px;
+}
+.mobile-panel-box .button-menu-toggle.btn-action-ico {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0 0 10px;
+  background: #fff;
+}
+.mobile-panel-box .button-menu-toggle.btn-action-ico:hover {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mobile-panel-box .button-menu-toggle.btn-action-ico.ico-menu:before {
+  filter: brightness(0) grayscale(1);
 }
 .mobile-panel-box .btn-action-ico {
   width: 34px;

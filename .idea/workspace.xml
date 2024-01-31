@@ -15124,15 +15124,7 @@
       <change beforePath="$PROJECT_DIR$/../ahip/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ahip/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ahip/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ahip/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sequoia/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sequoia/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sequoia/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sequoia/01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sequoia/02.html" beforeDir="false" afterPath="$PROJECT_DIR$/../sequoia/02.html" afterDir="false" />
@@ -15202,7 +15194,7 @@
       <workItem from="1700827140836" duration="18753000" />
       <workItem from="1701256546515" duration="3912000" />
       <workItem from="1701677308303" duration="6475000" />
-      <workItem from="1703672778260" duration="3542000" />
+      <workItem from="1703672778260" duration="4764000" />
     </task>
     <servers />
   </component>

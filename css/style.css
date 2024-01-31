@@ -467,6 +467,19 @@ body {
 .cnt-box .cnt-title:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 1599px) {
+  .main-header .button-menu .button-title,
+  .main-header .button-categories .button-title {
+    display: none;
+  }
+  .main-header .button-menu .button-ico,
+  .main-header .button-categories .button-ico {
+    margin: 0;
+  }
+  .main-header .navbar-nav:first-child {
+    padding-right: 10px;
+  }
+}
 @media (max-width: 1199px) {
   .header .user-wrap {
     font-size: 16px;

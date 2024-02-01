@@ -356,7 +356,7 @@ body {
   color: inherit;
 }
 .content-wrapper {
-  padding-top: 22px;
+  padding-top: 15px;
 }
 .main-footer {
   text-align: right;
@@ -910,6 +910,8 @@ body {
     display: grid;
     -ms-grid-columns: 1fr 317px;
         grid-template-columns: 1fr 317px;
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
   }
   .main-grid-box .grid-item-inner {
     padding: 0;

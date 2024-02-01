@@ -1732,13 +1732,15 @@ body {
   .elm-legend .elm-ico.elm-status {
     width: 35px;
     height: 35px;
-    margin-top: -18px;
+    margin-top: -17px;
     border: none;
     background: none !important;
+    overflow: visible;
   }
   .elm-legend .elm-ico.elm-status img,
   .elm-legend .elm-ico.elm-status svg {
     display: block;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.5));
   }
   .item-tile-total .tile-title-inner.title-row {
     display: block;
@@ -2295,9 +2297,12 @@ body {
   }
   .map-panel-box .map-legends-wrap {
     margin-top: 35px;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .map-panel-box .legend-title {
     width: 129px;
+    margin-bottom: 5px;
   }
   .map-panel-box .elm-legend {
     padding-right: 20px;

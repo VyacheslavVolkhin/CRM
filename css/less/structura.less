@@ -294,6 +294,15 @@ body {
 .main-footer {
     text-align: right;
 }
+body {
+	&:not(.loaded) {
+		.main-header {
+			.nav-item-menu {
+				display: none;
+			}
+		}
+	}
+}
 .main-header {
     .navbar-nav {
         align-items: center;

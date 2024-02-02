@@ -132,18 +132,9 @@ window.onload = (event) => {
 		return false
 	})
 };
-
-$(document).ready(function () {
-
-
-	//mobile buttons menu
-	$('.js-btn-mobile-menu-toggle').on('click', function() {
-		$('.mobile-panel-box').toggleClass('active');
-		return false;
-	})
-
-
+$(window).on('load', function() {
 	//menu dotted
+	$('body').addClass('loaded')
 	function menuMore() {
 		$('.main-header .nav-item-menu.menu-hidden').removeClass('menu-hidden')
 		$('#nav-submenu li').remove()
@@ -159,6 +150,18 @@ $(document).ready(function () {
 	$(window).on('resize', function() {
 		menuMore()
 	});
+});
+$(document).ready(function () {
+
+
+	//mobile buttons menu
+	$('.js-btn-mobile-menu-toggle').on('click', function() {
+		$('.mobile-panel-box').toggleClass('active');
+		return false;
+	})
+
+
+	
 
 
 	//slider-tabs-box
